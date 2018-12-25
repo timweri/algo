@@ -51,13 +51,3 @@ class Solution
         return max_len;
     }
 };
-
-int main()
-{
-    string inp;
-    while (true) {
-        cin >> inp;
-        cout << Solution().lengthOfLongestSubstring(inp) << '\n';
-    }
-    return 0;
-}

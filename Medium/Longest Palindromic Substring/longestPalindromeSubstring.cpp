@@ -1,17 +1,3 @@
-/*
-Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
-
-Example 1:
-    Input: "babad"
-    Output: "bab"
-    
-    Note: "aba" is also a valid answer.
-
-Example 2:
-    Input: "cbbd"
-    Output: "bb"
-*/
-
 #include <iostream>
 #include <string>
 
@@ -73,15 +59,3 @@ class Solution
         return k - 1;
     }
 };
-
-int main()
-{
-    string inp;
-    int low, high;
-    while (true)
-    {
-        cin >> inp;
-        cout << Solution().longestPalindrome(inp) << '\n';
-    }
-    return 0;
-}
