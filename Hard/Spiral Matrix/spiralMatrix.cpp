@@ -5,8 +5,14 @@ public:
         if (matrix.empty()) return vector<int>();
         vector<int> output;
         
+        // current coordinates
         int row = 0, col = 0;
+
+        // min_row, max_row, min_col, max_col are the min/max row/col we can be at
+        // these boudaries changes when we changes direction
         int min_row = 0, max_row = matrix.size() - 1, min_col = 0, max_col = matrix[0].size() - 1;
+
+        // current direction
         enum direction { LEFT, UP, RIGHT, DOWN } curdir = RIGHT;
         bool done = false;
         while (!done) {
