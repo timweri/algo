@@ -27,3 +27,5 @@ The two tuples are:
 Create a map. Traverse through A and B, add one to the value in map at the index equals to the sum of the current elements in A and B. Thus, the map holds the number of occurence of its index as the sum of elements from A and B.
 
 Now traverse through C and D, the 4 sum is 0 if the sum of the elements from A and B are the negative of the sum of the current elements from C and D. We can look this up in the map to see how many times we got it from A and B.
+
+This solution is O(N^2).
