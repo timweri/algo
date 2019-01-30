@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void find_pair(vector<int> arr, int x) {
+void find_pair(const vector<int> &arr, int x) {
   size_t start = 0, end = arr.size() - 1;
   while (start != end) {
     if (arr[start] + arr[end] > x)
