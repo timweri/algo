@@ -1,3 +1,12 @@
+// Given array A and M
+// A contains distinct values
+// M contains the number of copies of the element in A
+// A and M represents a full array S
+// eg.
+// A = [5,1,4,2] and M = [1,2,3,4]
+// Then S = [5,1,1,4,4,4,2,2,2,2]
+// Find the median of S in O(size of A)
+
 #include <algorithm>
 #include <iostream>
 #include <utility>
